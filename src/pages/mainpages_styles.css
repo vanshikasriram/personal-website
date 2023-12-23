@@ -1,0 +1,413 @@
+* {  
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+}
+
+@keyframes fadeInAnimation {
+    from {
+      opacity: 0; /* Start with opacity 0 */
+    }
+    to {
+      opacity: 1; /* Gradually fade in to opacity 1 */
+    }
+}
+
+@keyframes fadeOutAnimation {
+    from {
+      opacity: 1; /* Start with opacity 0 */
+    }
+    to {
+      opacity: 2; /* Gradually fade in to opacity 1 */
+    }
+}
+
+
+/* general for all main page titles  */
+.Title { 
+    color: #F93943;
+
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-left: 30px;
+    margin-right: 500px;
+    margin-top: 100px; 
+    margin-bottom: 0px;
+
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInAnimation 1s ease-in forwards;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid black;
+    margin: 40px 0;
+
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 2s;
+}
+
+/* for home page */
+h2.Subtitle {
+    color: black;
+    display: flex;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    margin-left: 30px;
+    margin-right: 200px;
+    line-height: normal;
+
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 1s;
+}
+
+h3.email a.email {
+    color: black;
+    display: block;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 30px;
+    text-decoration: underline;
+
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 2s;
+
+    transition: font-size 0.3s ease;
+}
+
+h3.email a.email:hover{
+    font-size: 27px
+}
+
+div.images {
+    margin-top: 70px;
+    margin-right: 30px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div.images img.img1 {
+    order: 3;
+    width: 570px;
+    height: auto;
+    padding: 8px;
+
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 3s;
+}
+
+div.images img.img2 {
+    order: 1;
+    width: 450px;
+    height: auto;
+    padding: 8px;
+
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 4s;
+}
+
+div.images img.img3 {
+    order: 2;
+    width: 328px;
+    height: auto;
+    padding: 8px;
+
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 5s;
+}
+
+img.img1:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+
+img.img2:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+    z-index: 1;
+}
+
+img.img3:hover {
+    transform: scale(1.1); 
+    transition: transform 0.3s ease;
+}
+
+
+/* for aboutme page */
+.aboutMe {
+    display: block;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 700px;
+
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 1s;
+}
+
+div.body span.aboutMe p.para {
+    font-size: 23px;
+}
+
+/* for projcets page */
+div.bodyProjects h3.sectionTitle {
+    color: #F93943;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    margin-left: 30px;
+    margin-bottom: 20px;
+
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 2500ms;
+}
+
+.card {
+    width: 400px; 
+    height: 225px; 
+    padding: 15px;
+    box-sizing: border-box; 
+    position: relative;
+    flex-shrink: 0;
+    flex-grow: 0;
+
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 3s;
+}
+
+.card p.projectTags {
+    margin: 0; 
+    position: absolute;
+    top: 20px;
+
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+
+.card h3.projectTitle {
+    margin: 0; 
+    position: absolute;
+    bottom: 10px;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: white;
+}
+
+div.cardContainer {
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    margin-left: 30px;
+
+}
+
+/* for individual project pages */
+h2.ProjectDate {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 50px;
+    text-align: right;
+
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 1s;
+}
+
+div.body .sectionTitle {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    margin-left: 220px;
+    margin-top: 0px;
+
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 2s;
+}
+
+div.body {
+    display: flex;
+    margin-bottom: 60px;
+}
+
+div.body p.desc{
+    margin: 0;
+}
+
+div.body .sectionText{
+    font-size: 23px;
+    margin-top: 0px;
+    margin-left: 178px;
+    margin-right: 250px;
+    line-height: 1.5;
+
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 2s;
+}
+
+div.body .skillsList{
+    font-size: 23px;
+    margin-top: 0px;
+    margin-right: 250px;
+    margin-left: 100px;
+    list-style-type: square;
+
+    opacity: 0; /* Initially hide the text */
+    animation: fadeInAnimation 1s ease-in forwards;
+    animation-delay: 2s;
+}
+
+.listItem {
+    padding: 6px;
+}
+
+
+/* image formatting for project pages */
+div.imagesAndVids {
+    display: flex;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: space-between;
+}
+
+.rehab-robotics1img {
+    width: 800px;
+    height: auto;
+}
+
+.rehab-robotics0img {
+    width: 500px;
+    height: auto;
+}
+
+div.rehab-robotics1 {
+    position: relative;
+    margin-top: 120px;
+    display:block; 
+}
+
+div.rehab-robotics0 {
+    position: relative;
+    margin-top: 0px;
+    display:block; 
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    padding: 8px;
+}
+  
+.rehab-robotics0:hover .overlay {
+    opacity: .9;
+}
+
+.rehab-robotics1:hover .overlay {
+    opacity: .9;
+}
+  
+.context {
+    font-size: 30px;
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: left;
+}
+
+/* for nerurkar lab */
+
+.developmental-biomech0img {
+    width: 550px;
+    height: auto;
+}
+
+.developmental-biomech1img {
+    width: 750px;
+    height: auto;
+}
+
+.developmental-biomech0:hover .overlay {
+    opacity: .9;
+}
+
+.developmental-biomech1:hover .overlay {
+    opacity: .9;
+}
+
+div.developmental-biomech0 {
+    position: relative;
+    display: block; 
+}
+
+div.developmental-biomech1 {
+    position: relative;
+    margin-top: 0px;
+    display:block; 
+}
+
+/* robotics page */
+.walking-robot0img {
+    width: 550px;
+    height: auto;
+}
+
+.walking-robot1img {
+    width: 750px;
+    height: auto;
+}
+
+.walking-robot0:hover .overlay {
+    opacity: .9;
+}
+
+.walking-robot1:hover .overlay {
+    opacity: .9;
+}
+
+div.walking-robot0 {
+    position: relative;
+    display:block; 
+}
+
+div.walking-robot1 {
+    position: relative;
+    margin-top: 0px;
+    display:block; 
+}
+
+span.walking-robot0vid {
+    margin-top: 120px;
+}

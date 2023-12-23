@@ -1,0 +1,104 @@
+.active {
+    color: #F93943;
+}
+
+* {  
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Public Sans', sans-serif;
+    text-decoration: none;
+  }
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white ;
+}
+
+nav div.rightside h3.pages {
+    color: black;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 30px;
+    margin-right: 20px;
+    border-radius: 0.5rem;
+    transition: font-size 0.3s ease;
+}
+
+nav div.rightside h3.pages:hover{
+    font-size: 22px;
+}
+
+nav .rightside{
+    display: flex;
+}
+
+nav h3.home {
+    color: #F93943;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 20px;
+    border-radius: 0.5rem;
+}
+
+nav .menu {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+    display: none;
+}
+
+nav .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: black;
+    border-radius: 0.2rem;
+}
+
+
+@media (max-width: 700px) {
+    nav .menu {
+        display: flex;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    nav div.rightside {
+        display: none;
+    }
+    
+    nav div.rightsideOpen {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+        background-color: white;
+        border-bottom: 2px solid black; 
+    }
+
+    nav div.rightsideOpen h3.pages {
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 0.5rem;
+    }
+
+}
