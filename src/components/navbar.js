@@ -37,14 +37,14 @@ export default function Navbar() {
     return (
         <nav>
             <h3 className="home"> 
-                <NavLink to="/vanshika-sriram/" style={{color: '#F93943'}}> Vanshika Sriram </NavLink>
+                <NavLink to="/vanshika-sriram" style={{color: '#F93943'}}> Vanshika Sriram </NavLink>
             </h3>
             <div className = {menuOpen ? "rightsideOpen" : "rightside"}>
                 {/* <h3 className = "pages"> 
                     <NavLink to="/about" style={{ color: 'black' }}> About </NavLink>
                 </h3> */}
                 <h3 className = "pages"> 
-                    <NavLink to="/projects" style={{ color: 'black' }}> Projects </NavLink>
+                    <NavLink to="/vanshika-sriram/projects" style={{ color: 'black' }}> Projects </NavLink>
                 </h3>
                 <h3 className = "pages">
                     <a href="https://www.linkedin.com/in/vanshika-sriram" 

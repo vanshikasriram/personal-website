@@ -20,11 +20,11 @@ function App() {
             <Router>
                 <Navbar />
                 <Routes>
-                    <Route path="/vanshika-sriram/" exact element={<Home />} /> 
+                    <Route path="/vanshika-sriram" exact element={<Home />} /> 
                     {/* <Route path="/about" exact element={<About />} /> */}
-                    <Route path="/projects" exact element={<Projects />} />
-                        <Route path="/research/:id" exact element={<ResearchPages />} />
-                        <Route path="/project/:id" exact element={<ProjectPages />} />
+                    <Route path="/vanshika-sriram/projects" exact element={<Projects />} />
+                        <Route path="/vanshika-sriram/:id" exact element={<ResearchPages />} />
+                        <Route path="/vanshika-sriram/:id" exact element={<ProjectPages />} />
                 </Routes>
             </Router>
         </div>
