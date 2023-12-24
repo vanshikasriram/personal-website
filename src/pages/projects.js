@@ -21,7 +21,7 @@ export default function Projects() {
                     <h3 className="sectionTitle"> Research </h3>
                     <div className="cardContainer">
                     {Object.values(researchJSON).map((research, index) => (
-                        <NavLink to={`/#/${research.id}`} key={index}> 
+                        <NavLink to={`/${research.id}`} key={index}> 
                         <div key={index} className="card" style={{ backgroundColor: research.Color }}>
                             <p className="projectTags">{research.Tags.join(', ')}</p>
                             <h3 className="projectTitle">{research.Title}</h3>
@@ -36,7 +36,7 @@ export default function Projects() {
                     <h3 className="sectionTitle"> Classes & Personal </h3>
                     <div className="cardContainer">
                     {Object.values(projectsJSON).map((project, index) => (
-                        <NavLink to={`/#/${project.id}`} key={index} target="_blank" rel="noopener noreferrer" component="a"> 
+                        <NavLink to={`/${project.id}`} key={index} target="_blank" rel="noopener noreferrer" component="a"> 
                         <div key={index} className="card" style={{ backgroundColor: project.Color }}>
                             <p className="projectTags">{project.Tags.join(', ')}</p>
                             <h3 className="projectTitle">{project.Title}</h3>
