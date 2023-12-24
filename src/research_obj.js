@@ -6,9 +6,9 @@ const researchJSON = {
         "Tags": ['Computer science', 'Molecular bio'],
         "date": "In progress",
         "Pi": "Dr. Aurel Lazar",
-        "Skills": ['More to come soon'],
+        "Skills": ['Coming soon'],
         "Images": {},
-        "Description": "More to come soon"       
+        "Description": "Coming soon!"       
     },
     "Agrawal Lab" : {
         "id": "rehab-robotics",

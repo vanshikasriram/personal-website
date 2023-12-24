@@ -5,9 +5,9 @@ const projectsJSON = {
         "Title": "Wearable UV Sensor",
         "Tags": ['Medical devices', 'Computer science'],
         "date": "In progress",
-        "Skills": ['More to come soon'],
+        "Skills": ['Coming soon'],
         "Images": {},
-        "Description": "More to come soon"
+        "Description": "Coming soon!"
     },
     "Walking Robot" : {
         "id": "walking-robot",
