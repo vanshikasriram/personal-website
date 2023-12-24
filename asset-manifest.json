@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/vanshika-sriram/static/css/main.e4136225.css",
-    "main.js": "/vanshika-sriram/static/js/main.79af9e95.js",
+    "main.css": "/vanshika-sriram/static/css/main.8081a662.css",
+    "main.js": "/vanshika-sriram/static/js/main.a058c986.js",
     "index.html": "/vanshika-sriram/index.html",
-    "main.e4136225.css.map": "/vanshika-sriram/static/css/main.e4136225.css.map",
-    "main.79af9e95.js.map": "/vanshika-sriram/static/js/main.79af9e95.js.map"
+    "main.8081a662.css.map": "/vanshika-sriram/static/css/main.8081a662.css.map",
+    "main.a058c986.js.map": "/vanshika-sriram/static/js/main.a058c986.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4136225.css",
-    "static/js/main.79af9e95.js"
+    "static/css/main.8081a662.css",
+    "static/js/main.a058c986.js"
   ]
 }
