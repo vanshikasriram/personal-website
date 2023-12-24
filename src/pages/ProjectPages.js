@@ -9,10 +9,16 @@ import "./mainpages_styles.css";
 
 export default function ProjectPages() {
     const {id} = useParams();
+    const imgWrapRefs = useRef([]);
 
     const selectedProject = Object.values(projectsJSON).find(proj => proj.id === id);
 
     const {Color, Title, date, Skills, Description, Images, Video } = selectedProject;
+
+    if (!selectedProject) {
+        // Handle the case where selectedResearch is undefined
+        return <div>Research not found</div>;
+    }
 
     const descriptionWithLineBreaks = Description.split('\n').map((line, index) => (
         <React.Fragment key={index}>
@@ -21,8 +27,6 @@ export default function ProjectPages() {
         </React.Fragment>
     ));
 
-
-    const imgWrapRefs = useRef([]);
 
     const handleImageLoad = (index) => {
       return () => {
@@ -43,7 +47,7 @@ export default function ProjectPages() {
                 <div className={`${id}${index}`} key={index} ref={(el) => (imgWrapRefs.current[index] = el)}>
                     <img key = {index} src={src} className={`${id}${index}img`}alt = "Images of project" onLoad={handleImageLoad(index)}/>
                     <div className="overlay" style={{ backgroundColor: Color }}>
-                        <div className="context" style={{ Color: Color }}> {desc} </div>
+                        <div className="context" style={{ color: Color }}> {desc} </div>
                     </div>
                 </div>
             ))

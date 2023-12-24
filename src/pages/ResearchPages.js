@@ -7,12 +7,17 @@ import { useParams } from "react-router-dom";
 import "./mainpages_styles.css"; 
 
 export default function ResearchPages() {
-
     const {id} = useParams();
+    const imgWrapRefs = useRef([]);
 
     const selectedResearch = Object.values(researchJSON).find(research => research.id === id);
 
     const {Color, Title, date, Pi, Skills, Description, Images, Video } = selectedResearch;
+
+    if (!selectedResearch) {
+        // Handle the case where selectedResearch is undefined
+        return <div>Research not found</div>;
+    }
 
     const descriptionWithLineBreaks = Description.split('\n').map((line, index) => (
         <React.Fragment key={index}>
@@ -20,8 +25,6 @@ export default function ResearchPages() {
             <br />
         </React.Fragment>
     ));
-
-    const imgWrapRefs = useRef([]);
 
     const handleImageLoad = (index) => {
       return () => {
