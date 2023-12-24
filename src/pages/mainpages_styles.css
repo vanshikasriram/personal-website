@@ -14,16 +14,6 @@
     }
 }
 
-@keyframes fadeOutAnimation {
-    from {
-      opacity: 1; /* Start with opacity 0 */
-    }
-    to {
-      opacity: 2; /* Gradually fade in to opacity 1 */
-    }
-}
-
-
 /* general for all main page titles  */
 .Title { 
     color: #F93943;
@@ -64,7 +54,7 @@ h2.Subtitle {
 
     opacity: 0; /* Initially hide the text */
     animation: fadeInAnimation 1s ease-in forwards;
-    animation-delay: 1s;
+    animation-delay: 700ms;
 }
 
 h3.email a.email {
@@ -79,7 +69,7 @@ h3.email a.email {
 
     opacity: 0; /* Initially hide the text */
     animation: fadeInAnimation 1s ease-in forwards;
-    animation-delay: 1s;
+    animation-delay: 700ms;
 
     transition: font-size 0.3s ease;
 }
@@ -105,7 +95,7 @@ div.images img.img1 {
 
     opacity: 0; /* Initially hide the text */
     animation: fadeInAnimation 500ms ease-in forwards;
-    animation-delay: 3s;
+    animation-delay: 1700ms;
 }
 
 div.images img.img2 {
@@ -116,7 +106,7 @@ div.images img.img2 {
 
     opacity: 0; /* Initially hide the text */
     animation: fadeInAnimation 500ms ease-in forwards;
-    animation-delay: 3500ms;
+    animation-delay: 2200ms;
 }
 
 div.images img.img3 {
@@ -127,7 +117,7 @@ div.images img.img3 {
 
     opacity: 0; /* Initially hide the text */
     animation: fadeInAnimation 500ms ease-in forwards;
-    animation-delay: 4s;
+    animation-delay: 2700ms;
 }
 
 img.img1:hover {
@@ -175,8 +165,8 @@ div.bodyProjects h3.sectionTitle {
     margin-bottom: 20px;
 
     opacity: 0; /* Initially hide the text */
-    animation: fadeInAnimation 1s ease-in forwards;
-    animation-delay: 2500ms;
+    animation: fadeInAnimation 700ms ease-in forwards;
+    animation-delay: 1s;
 }
 
 .card {
@@ -189,8 +179,8 @@ div.bodyProjects h3.sectionTitle {
     flex-grow: 0;
 
     opacity: 0; /* Initially hide the text */
-    animation: fadeInAnimation 1s ease-in forwards;
-    animation-delay: 2s;
+    animation: fadeInAnimation 700ms ease-in forwards;
+    animation-delay: 1500ms;
 }
 
 .card p.projectTags {
@@ -232,8 +222,8 @@ h2.ProjectDate {
     text-align: right;
 
     opacity: 0; /* Initially hide the text */
-    animation: fadeInAnimation 1s ease-in forwards;
-    animation-delay: 1s;
+    animation: fadeInAnimation 500ms ease-in forwards;
+    animation-delay: 700ms;
 }
 
 div.body .sectionTitle {
@@ -244,7 +234,7 @@ div.body .sectionTitle {
     margin-top: 0px;
 
     opacity: 0; /* Initially hide the text */
-    animation: fadeInAnimation 1s ease-in forwards;
+    animation: fadeInAnimation 700ms ease-in forwards;
     animation-delay: 1s;
 }
 
@@ -265,8 +255,8 @@ div.body .sectionText{
     line-height: 1.5;
 
     opacity: 0; /* Initially hide the text */
-    animation: fadeInAnimation 1s ease-in forwards;
-    animation-delay: 2s;
+    animation: fadeInAnimation 700ms ease-in forwards;
+    animation-delay: 1500ms;
 }
 
 div.body .skillsList{
@@ -277,7 +267,7 @@ div.body .skillsList{
     list-style-type: square;
 
     opacity: 0; /* Initially hide the text */
-    animation: fadeInAnimation 1s ease-in forwards;
+    animation: fadeInAnimation 700ms ease-in forwards;
     animation-delay: 2s;
 }
 
@@ -329,10 +319,12 @@ div.rehab-robotics0 {
   
 .rehab-robotics0:hover .overlay {
     opacity: .9;
+    transition: transform 0.3s ease;
 }
 
 .rehab-robotics1:hover .overlay {
     opacity: .9;
+    transition: transform 0.3s ease;
 }
   
 .context {
@@ -361,10 +353,12 @@ div.rehab-robotics0 {
 
 .developmental-biomech0:hover .overlay {
     opacity: .9;
+    transition: transform 0.3s ease;
 }
 
 .developmental-biomech1:hover .overlay {
     opacity: .9;
+    transition: transform 0.3s ease;
 }
 
 div.developmental-biomech0 {
@@ -391,10 +385,12 @@ div.developmental-biomech1 {
 
 .walking-robot0:hover .overlay {
     opacity: .9;
+    transition: transform 0.3s ease;
 }
 
 .walking-robot1:hover .overlay {
     opacity: .9;
+    transition: transform 0.3s ease;
 }
 
 div.walking-robot0 {

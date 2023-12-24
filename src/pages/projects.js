@@ -37,7 +37,7 @@ export default function Projects() {
                     <div className="cardContainer">
                     {Object.values(projectsJSON).map((project, index) => (
                         <NavLink to={`/project/${project.id}`} key={index}> 
-                        <div key={index} className="card" style={{ backgroundColor: project.Colors }}>
+                        <div key={index} className="card" style={{ backgroundColor: project.Color }}>
                             <p className="projectTags">{project.Tags.join(', ')}</p>
                             <h3 className="projectTitle">{project.Title}</h3>
                         </div>

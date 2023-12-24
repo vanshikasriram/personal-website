@@ -17,6 +17,8 @@ nav {
     position: sticky;
     top: 0;
     background-color: white ;
+    z-index: 1000;
+    
 }
 
 nav div.rightside h3.pages {
