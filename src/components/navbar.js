@@ -37,7 +37,7 @@ export default function Navbar() {
     return (
         <nav>
             <h3 className="home"> 
-                <NavLink to="" style={{color: '#F93943'}}> Vanshika Sriram </NavLink>
+                <NavLink to="/" style={{color: '#F93943'}}> Vanshika Sriram </NavLink>
             </h3>
             <div className = {menuOpen ? "rightsideOpen" : "rightside"}>
                 {/* <h3 className = "pages"> 
