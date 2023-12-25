@@ -12,7 +12,7 @@ export default function Projects() {
     return (
         <div> 
             <div className="title">
-                <h1 className = "Title"> Some things I've worked on </h1>
+                <h1 className = "Title"> My work </h1>
                 <hr />
             </div>
 
