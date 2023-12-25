@@ -47,7 +47,7 @@ export default function ProjectPages() {
                 <div className={`${id}${index}`} key={index} ref={(el) => (imgWrapRefs.current[index] = el)}>
                     <img key = {index} src={src} className={`${id}${index}img`}alt = "Images of project" onLoad={handleImageLoad(index)}/>
                     <div className="overlay" style={{ backgroundColor: Color }}>
-                        <div className="context" style={{ color: Color }}> {desc} </div>
+                        <div className="context" style={{ Color: Color }}> {desc} </div>
                     </div>
                 </div>
             ))
