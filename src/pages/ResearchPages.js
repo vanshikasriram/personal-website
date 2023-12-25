@@ -60,7 +60,7 @@ export default function ResearchPages() {
         return(
             Video.map((vid, index) => (
                 <span className={`${id}${index}vid`}>
-                <iframe width="560" height="315"
+                <iframe className = "video" width="560" height="315"
                         src= {vid}
                         title = "Project video"
                         allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

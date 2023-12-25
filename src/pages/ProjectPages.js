@@ -62,7 +62,7 @@ export default function ProjectPages() {
         return(
             Video.map((vid, index) => (
                 <span className={`${id}${index}vid`}>
-                <iframe width="750" height="500"
+                <iframe className = "video" width="750" height="500"
                         src= {vid}
                         title = "Project video"
                         allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
