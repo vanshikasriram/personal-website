@@ -23,7 +23,7 @@
     font-weight: 800;
     line-height: normal;
     margin-left: 30px;
-    margin-right: 500px auto;
+    margin-right: 500px;
     margin-top: 100px; 
     margin-bottom: 0px;
 
@@ -409,21 +409,21 @@ span.walking-robot0vid {
 }
 
 @media (max-width: 1000px) and (min-width: 500px) {
-.Title {
-    color: #F93943;
+    .Title {
+        color: #F93943;
 
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: normal;
-    margin-left: 30px;
-    margin-right: 300px auto;
-    margin-top: 100px; 
-    margin-bottom: 0px;
+        font-size: 60px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        margin-left: 30px;
+        margin-right: 300px;
+        margin-top: 100px; 
+        margin-bottom: 0px;
 
-    opacity: 0; /* Initially hide the text */
-    animation: fadeInAnimation 1s ease-in forwards;
-}
+        opacity: 0; /* Initially hide the text */
+        animation: fadeInAnimation 1s ease-in forwards;
+    }
 
     div.body .sectionTitle {
         font-size: 30px;
@@ -642,7 +642,7 @@ span.walking-robot0vid {
     
     div.images img.img1 {
         order: 3;
-        width: 228px;
+        width: 290px;
         height: auto;
         padding: 8px;
     
@@ -653,7 +653,7 @@ span.walking-robot0vid {
     
     div.images img.img2 {
         order: 1;
-        width: 230px ;
+        width: 290px ;
         height: auto;
         padding: 8px;
     
@@ -664,7 +664,7 @@ span.walking-robot0vid {
     
     div.images img.img3 {
         order: 2;
-        width: 230px;
+        width: 290px;
         height: auto;
         padding: 8px;
     
@@ -783,16 +783,16 @@ span.walking-robot0vid {
         margin-left: 0px;
         margin-right: 20px;
         line-height: 1.5;
-    
-        opacity: 0; /* Initially hide the text */
-        animation: fadeInAnimation 700ms ease-in forwards;
-        animation-delay: 1500ms;
     }
     
     div.body .sectionText p.desc{
         margin-left: 15px;
         margin-right:10px;
-        margin-top: 10px
+        margin-top: 10px;
+
+        opacity: 0; /* Initially hide the text */
+        animation: fadeInAnimation 700ms ease-in forwards;
+        animation-delay: 1500ms;
     }
 
     div.body .skillsList{
@@ -816,12 +816,12 @@ span.walking-robot0vid {
     }
     
     .rehab-robotics1img {
-        width: 240px;
+        width: 300px;
         height: auto;
     }
     
     .rehab-robotics0img {
-        width: 240px;
+        width: 300px;
         height: auto;
     }
     
@@ -873,12 +873,12 @@ span.walking-robot0vid {
     /* for nerurkar lab */
     
     .developmental-biomech0img {
-        width: 240px;
+        width: 300px;
         height: auto;
     }
     
     .developmental-biomech1img {
-        width: 240px;
+        width: 300px;
         height: auto;
     }
     
@@ -905,7 +905,7 @@ span.walking-robot0vid {
     
     /* robotics page */
     .walking-robot0img {
-        width: 250px;
+        width: 300px;
         height: auto;
     }
     
@@ -924,7 +924,7 @@ span.walking-robot0vid {
     }
 
     iframe.video {
-        width: 250px;
+        width: 300px;
         height: auto;
     }
 
